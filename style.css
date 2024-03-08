@@ -1,0 +1,710 @@
+@font-face {
+  font-family: 'Oswald';
+  src: url('./fonts/Oswald-Light.ttf');
+}
+
+body{
+  height: 100vh;
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+  background-image: url('./img/fondo1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: Oswald;
+  color: #F8F8F8;
+  font-weight: bold;
+}
+
+main{
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+
+article{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h2{
+  padding: 0;
+  margin: 0;
+  font-size: 48px;
+}
+
+.vigneta{
+  width: 48px;
+  height: 48px;
+  background-image: url('./img/icon.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+#titulo{
+  position: absolute;
+  bottom: 0;
+  right: 20px;
+  padding: 0;
+  margin: 0;
+  text-shadow: 2px 2px 15px #ff5569;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#titulo2{
+  position: absolute;
+  top: 0;
+  left: 20px;
+  padding: 0;
+  margin: 0;
+  text-shadow: 2px 2px 15px #ff5569;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+img{
+  border-radius: 100%;
+  margin: 0 auto;
+  width: 300px;
+  position: relative;
+  cursor: pointer;
+  box-shadow: 
+     5px 5px 70px #ff5569,
+    -5px -5px 70px #ff5569;
+  z-index: 999;
+}
+
+.elementos{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#elementos{
+  position: absolute;
+}
+
+#elem1:hover, #elem2:hover, #elem3:hover, #elem4:hover, #elem5:hover, #elem6:hover, #elem7:hover, #elem8:hover, #elem9:hover, #elem10:hover, #elem11:hover, #elem12:hover, #elem13:hover, #elem14:hover{
+  transform: scale(1.2);
+}
+
+#elementos a{
+  text-align: center;
+  position: absolute;
+  background-color: #ff7989;
+  border-radius: 100%;
+  transition: all ease-in-out 800ms;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+#regresar{
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  background-color: #ff7989;
+  border-radius: 100%;
+  top: 10px;
+  left:10px;
+  text-align: center;
+  text-decoration: none;
+  transition: all ease-in-out 800ms;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#regresar:hover{
+  background-color: #ff5569;
+}
+
+#contenedor-galeria{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#galeria{
+  width: 1000px;
+  height: 500px;
+  border-radius: 20px;
+  background-color: #ff5569;
+  border: 2px solid white;
+  box-shadow: 5px 5px 75px #2B2B2B;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  gap: 5px;
+}
+
+.img-galeria{
+  width: 50%;
+  height: 100%;
+  border-radius: 15px;
+  background-color: #2B2B2B;
+  cursor: pointer;
+}
+
+.carga{
+	width: 100vw;
+	height: 100vh;
+	background-color: #ff5569;
+	background-size: cover;
+	position: fixed;
+	top: 0;
+  padding: 0;
+  margin: 0;
+	z-index: 9999;
+}
+
+.d-none{
+  display: none;
+}
+
+#elem1{
+  width: 120px;
+  height: 120px;
+  background-image: url('./img/madre.png');
+  background-size: cover;
+  color: #2b2b2b;
+  transition: all ease-in-out 800ms;
+  cursor: pointer;
+}
+
+#elem2{
+  width: 80px;
+  height: 80px;
+  background-image: url('./img/hija.png');
+  background-size: cover;
+  color: #2b2b2b;
+  transition: all ease-in-out 800ms;
+  cursor: pointer;
+}
+
+#elem3{
+  width: 110px;
+  height: 110px;
+  background-image: url('./img/abuela.png');
+  background-size: cover;
+  color: #2b2b2b;
+  transition: all ease-in-out 800ms;
+  cursor: pointer;
+}
+
+#elem4{
+  width: 90px;
+  height: 90px;
+  background-image: url('./img/costura.png');
+  background-size: cover;
+  color: #2b2b2b;
+  transition: all ease-in-out 800ms;
+  cursor: pointer;
+}
+
+#elem5{
+  width: 60px;
+  height: 60px;
+  background-image: url('./img/pan.png');
+  background-size: cover;
+  color: #2b2b2b;
+  transition: all ease-in-out 800ms;
+  cursor: pointer;
+}
+
+#elem6{
+  width: 60px;
+  height: 60px;
+  background-image: url('./img/tejido.png');
+  background-size: cover;
+  color: #2b2b2b;
+  transition: all ease-in-out 800ms;
+  cursor: pointer;
+}
+
+#elem7{
+  width: 110px;
+  height: 110px;
+  background-image: url('./img/scout.png');
+  background-size: cover;
+  color: #2b2b2b;
+  transition: all ease-in-out 800ms;
+  cursor: pointer;
+}
+
+#elem8{
+  width: 100px;
+  height: 100px;
+  background-image: url('./img/mujer.png');
+  background-size: cover;
+  color: #2b2b2b;
+  transition: all ease-in-out 800ms;
+  cursor: pointer;
+}
+
+#elem9{
+  width: 70px;
+  height: 70px;
+  background-image: url('./img/pastelera.png');
+  background-size: cover;
+  color: #2b2b2b;
+  transition: all ease-in-out 800ms;
+  cursor: pointer;
+}
+
+#elem10{
+  width: 90px;
+  height: 90px;
+  background-image: url('./img/mascotas.png');
+  background-size: cover;
+  color: #2b2b2b;
+  transition: all ease-in-out 800ms;
+  cursor: pointer;
+}
+
+#elem11{
+  width: 100px;
+  height: 100px;
+  background-image: url('./img/hermana.png');
+  background-size: cover;
+  color: #2b2b2b;
+  transition: all ease-in-out 800ms;
+  cursor: pointer;
+}
+
+#elem12{
+  width: 70px;
+  height: 70px;
+  background-image: url('./img/cocinera.png');
+  background-size: cover;
+  color: #2b2b2b;
+  transition: all ease-in-out 800ms;
+  cursor: pointer;
+}
+
+#elem13{
+  width: 80px;
+  height: 80px;
+  background-image: url('./img/bordadora.png');
+  background-size: cover;
+  color: #2b2b2b;
+  transition: all ease-in-out 800ms;
+  cursor: pointer;
+}
+
+#elem14{
+  width: 100px;
+  height: 100px;
+  background-image: url('./img/kitty.png');
+  background-size: cover;
+  color: #2b2b2b;
+  transition: all ease-in-out 800ms;
+  cursor: pointer;
+}
+
+@keyframes movimiento1 {
+  from{
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+  to{
+    top: -300px;
+    left: -50px;
+  }
+}
+
+@keyframes movimiento2 {
+  from{
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+  to{
+    top: 180px;
+    left: -50px;
+  }
+}
+
+@keyframes movimiento3 {
+  from{
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+  to{
+    left: 200px;
+    top: -50px;
+  }
+}
+
+@keyframes movimiento4 {
+  from{
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+  to{
+    right: 250px;
+    top: -80px;
+  }
+}
+
+@keyframes movimiento5 {
+  from{
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+  to{
+    top: 70px;
+    left: 350px;
+  }
+}
+
+@keyframes movimiento6 {
+  from{
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+  to{
+    bottom: 170px;
+    right: 260px;
+  }
+}
+
+@keyframes movimiento7 {
+  from{
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+  to{
+    top: 100px;
+    right: 300px;
+  }
+}
+
+@keyframes movimiento8 {
+  from{
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+  to{
+    bottom: 130px;
+    left: 300px;
+  }
+}
+
+@keyframes movimiento9 {
+  from{
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+  to{
+    bottom: 30px;
+    left: 450px;
+  }
+}
+
+@keyframes movimiento10 {
+  from{
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+  to{
+    top: 150px;
+    left: 200px;
+  }
+}
+
+@keyframes movimiento11 {
+  from{
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+  to{
+    bottom: 100px;
+    right: 400px;
+  }
+}
+
+@keyframes movimiento12 {
+  from{
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+  to{
+    top: 100px;
+    right: 150px;
+  }
+}
+
+@keyframes movimiento13 {
+  from{
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+  to{
+    bottom: 100px;
+    right: 150px;
+  }
+}
+
+@keyframes movimiento14 {
+  from{
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+  to{
+    bottom: 100px;
+    left: 150px;
+  }
+}
+
+.desplazar1{
+  animation-name: movimiento1;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+}
+
+.desplazar2{
+  animation-name: movimiento2;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+}
+
+.desplazar3{
+  animation-name: movimiento3;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+}
+
+.desplazar4{
+  animation-name: movimiento4;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+}
+
+.desplazar5{
+  animation-name: movimiento5;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+}
+
+.desplazar6{
+  animation-name: movimiento6;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+}
+
+.desplazar7{
+  animation-name: movimiento7;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+}
+
+.desplazar8{
+  animation-name: movimiento8;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+}
+
+.desplazar9{
+  animation-name: movimiento9;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+}
+
+.desplazar10{
+  animation-name: movimiento10;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+}
+
+.desplazar11{
+  animation-name: movimiento11;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+}
+
+.desplazar12{
+  animation-name: movimiento12;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+}
+
+.desplazar13{
+  animation-name: movimiento13;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+}
+
+.desplazar14{
+  animation-name: movimiento14;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+}
+
+
+/* Spinner */
+.sk-folding-cube {
+  margin: 45vh auto;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  position: relative;
+  -webkit-transform: rotateZ(45deg);
+  transform: rotateZ(45deg);
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+}
+
+.sk-folding-cube .sk-cube {
+  float: left;
+  width: 50%;
+  height: 50%;
+  border-radius: 100%;
+  position: relative;
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1); 
+}
+.sk-folding-cube .sk-cube:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  background-color: white;
+  -webkit-animation: sk-foldCubeAngle 2.4s infinite linear both;
+          animation: sk-foldCubeAngle 2.4s infinite linear both;
+  -webkit-transform-origin: 100% 100%;
+      -ms-transform-origin: 100% 100%;
+          transform-origin: 100% 100%;
+}
+.sk-folding-cube .sk-cube2 {
+  -webkit-transform: scale(1.1) rotateZ(90deg);
+          transform: scale(1.1) rotateZ(90deg);
+}
+.sk-folding-cube .sk-cube3 {
+  -webkit-transform: scale(1.1) rotateZ(180deg);
+          transform: scale(1.1) rotateZ(180deg);
+}
+.sk-folding-cube .sk-cube4 {
+  -webkit-transform: scale(1.1) rotateZ(270deg);
+          transform: scale(1.1) rotateZ(270deg);
+}
+.sk-folding-cube .sk-cube2:before {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+.sk-folding-cube .sk-cube3:before {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s; 
+}
+.sk-folding-cube .sk-cube4:before {
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
+}
+@-webkit-keyframes sk-foldCubeAngle {
+  0%, 10% {
+    -webkit-transform: perspective(140px) rotateX(-180deg);
+            transform: perspective(140px) rotateX(-180deg);
+    opacity: 0; 
+  } 25%, 75% {
+    -webkit-transform: perspective(140px) rotateX(0deg);
+            transform: perspective(140px) rotateX(0deg);
+    opacity: 1; 
+  } 90%, 100% {
+    -webkit-transform: perspective(140px) rotateY(180deg);
+            transform: perspective(140px) rotateY(180deg);
+    opacity: 0; 
+  } 
+}
+
+@keyframes sk-foldCubeAngle {
+  0%, 10% {
+    -webkit-transform: perspective(140px) rotateX(-180deg);
+            transform: perspective(140px) rotateX(-180deg);
+    opacity: 0; 
+  } 25%, 75% {
+    -webkit-transform: perspective(140px) rotateX(0deg);
+            transform: perspective(140px) rotateX(0deg);
+    opacity: 1; 
+  } 90%, 100% {
+    -webkit-transform: perspective(140px) rotateY(180deg);
+            transform: perspective(140px) rotateY(180deg);
+    opacity: 0; 
+  }
+}
